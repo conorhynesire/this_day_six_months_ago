@@ -22,8 +22,8 @@ module TwitterHelper
     document = Nokogiri::HTML(open(url_date))
     articles = document.xpath("//*[@id='mw-content-text']/div/ul[1]/li")
     random_article = rand(1..articles.count)
-    tweet = articles[random_article].text
-
+    tweet = articles[random_article].text if articles[random_article] != nil
+    tweet ||= Time.now.strftime("%Y") + " – Conor noticed an error happened"
     return tweet
   end
 
