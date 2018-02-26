@@ -7,24 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>Conor Hynes - Greatest person featured on this web page</title>
-
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="css/conorwebsite.min.css" rel="stylesheet">
-
   </head>
   <body id="page-top">
-    <div class="container container-table text-center">
-        <div class="row vertical-center-row">
-          <div class="col-md-8 col-md-offset-2">
-            <h1>On this day .. 6 months ago</h1>
-            <h2><%= @this_day_6_months_ago_text %></h2>
-          </div>
-        </div>
-    </div>
+    <%= react_component("Fact", {  factText: @this_day_6_months_ago_text }) %>
   </body>
 
 </html>
