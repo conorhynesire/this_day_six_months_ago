@@ -1,5 +1,4 @@
 class TwitterController < ApplicationController
-  include TwitterHelper
   def index
     wikipedia_scraper = WikipediaScraperService.new()
 
