@@ -1,6 +1,8 @@
 class TwitterController < ApplicationController
   include TwitterHelper
   def index
-    @this_day_6_months_ago_text = TwitterHelper.get_wiki_data
+    wikipedia_scraper = WikipediaScraperService.new()
+
+    @this_day_6_months_ago_text = wikipedia_scraper.get_random_article(6.months.ago)
   end
 end
