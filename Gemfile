@@ -37,8 +37,6 @@ gem 'nokogiri'
 
 gem 'jquery-rails'
 
-gem 'webpacker'
-gem 'react-rails'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
