@@ -1,6 +1,18 @@
-# README
+# I'm going to redo this in sinatra + ruby, this is way too much for a project like this!!!!
 
-This is just an app i wanted to make as a joke! 
+## Prerequisites
+  Have Ruby Installed
+  Have Ruby on rails Installed.
+
+## Install
+    bundle install
+
+## Run Server
+    rails s 
+
+## Description
+
+This is just an app I wanted to make as a joke! 
 
 Simple rails app with no hidden installs, just clone and run.
 
